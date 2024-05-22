@@ -45,3 +45,7 @@ install(EXPORT
     DESTINATION "${CMAKE_INSTALL_DATADIR}/cmake/mul_cpp"
     NAMESPACE mul_cpp::
 )
+
+# pkgconfig file generation
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/mul_cpp.pc.in ${CMAKE_CURRENT_BINARY_DIR}/mul_cpp.pc @ONLY)
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/mul_cpp.pc DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig)
