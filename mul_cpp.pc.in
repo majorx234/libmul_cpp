@@ -1,5 +1,5 @@
 libdir=@CMAKE_INSTALL_PREFIX@/@CMAKE_INSTALL_LIBDIR@
-includedir=@CMAKE_INSTALL_PREFIX@/include/libmul_cpp
+includedir=@CMAKE_INSTALL_PREFIX@/@CMAKE_INSTALL_INCLUDEDIR@/libmul_cpp
 
 Name: libmul_cpp
 Description: C++ multiplication library
